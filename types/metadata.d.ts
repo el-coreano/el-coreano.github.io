@@ -1,3 +1,3 @@
 declare interface metaData {
-	title: string;
+  title: string;
 }
