@@ -6,7 +6,10 @@ interface Link {
   path: string;
   label: string;
 }
-const links: Array<Link> = [{ path: '/about', label: 'about' }];
+const links: Array<Link> = [
+  { path: '/about', label: 'about' },
+  { path: '/blog', label: 'blog' },
+];
 
 const NavList = () => {
   return (
