@@ -6,14 +6,17 @@ interface Link {
   path: string;
   label: string;
 }
-const links: Array<Link> = [{ path: '/about', label: 'about' }];
+const links: Array<Link> = [
+  { path: '/about', label: 'about' },
+  { path: '/blog', label: 'blog' },
+];
 
 const NavList = () => {
   return (
     <nav>
       {links.map((link) => (
         <Link href={link.path} key={link.path}>
-          <a>{link.label}</a>
+          {link.label}
         </Link>
       ))}
     </nav>
