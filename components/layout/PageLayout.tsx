@@ -13,7 +13,7 @@ const NavList = () => {
     <nav>
       {links.map((link) => (
         <Link href={link.path} key={link.path}>
-          <a>{link.label}</a>
+          {link.label}
         </Link>
       ))}
     </nav>
